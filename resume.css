@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    background-color: #707fa4;
+    font-family: 'Montserrat', sans-serif; /* Apply the imported font to the body */
+}
+
+/* Add styles for header */
+.header {
+    color: white;
+    padding: 10px;
+}
+
+/* Add styles for toggle button */
+.header-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Add styles for toggle lines */
+.toggle-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Add styles for sidebar */
+.sidebar {
+    position: relative;
+    top: 8%;
+    left: -100%; /* Hide the sidebar off-screen by default */
+    width: 12vw;
+    height: 30vw; /* Adjust height to fill the entire viewport */
+    background-color: #707fa4;
+    color: white;
+    transition: left 0.5s ease; /* Transition the left position */
+    z-index: 1000;
+}
+
+.sidebar-content {
+    padding-top: 1vw;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease; /* Add transition for background color */
+    border-radius: 50px;
+    position: relative;
+}
+
+.sidebar a:hover {
+    background-color: #b1d0d8;
+}
+
+.sidebar a::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Set it to absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Inherit border radius from the parent */
+    z-index: -1; /* Set a lower z-index to position behind the text */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 12vw; /* Adjust the width for smaller screens */
+    }
+
+    .content-container {
+        margin-left: 200px; /* Adjust the margin for smaller screens */
+    }
+    body {
+        font-size: 2vw; /* Decrease font size for smaller screens */
+    }
+}
+
+.plain-rectangle1 {
+    width: 81vw; /* Set the width */
+    height: 10vw; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    position: relative;
+    top: -30vw;
+    left: 10vw;
+    border-radius: 10px;
+}
+
+.empty-rectangle {
+    width: 25vw; /* Set initial width to 0 */
+    height: 108vw; /* Set height to cover the entire height */
+    position: relative;
+    border-left: 1px solid #000; /* Set the left border */
+    border-right: 1px solid #000; /* Set the right border */
+    border-top: 1px  solid #000;
+    border-bottom: 1px solid #000;
+    top: -38.5vw;
+    left: 12vw;
+    border-radius: 10px;
+}
+
+.empty-rectangle .image1 {
+    width: 80%; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%;
+    min-width: none;
+    max-height: auto;
+    min-height: auto;
+    margin: 10%; /* Center the image horizontally */
+    border-radius: 20px;
+}
+
+.empty-rectangle .image2 {
+    width: 2.5vw; /* Set width of the image */
+    height: 2.5vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -3vw;
+    left: 0;
+    border-radius: 50%;
+}
+
+.empty-rectangle .text1 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -9.3vw; /* Adjust the vertical position */
+    left: -2vw; /* Adjust the horizontal position */
+}
+
+p.text1 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text1 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.empty-rectangle .image3 {
+    width: 2.5vw; /* Set width of the image */
+    height: 2.5vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -11vw;
+    left: 0;
+    border-radius: 50%;
+}
+
+.empty-rectangle .text2 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -17.3vw; /* Adjust the vertical position */
+    left: 2vw; /* Adjust the horizontal position */
+}
+p.text2 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text2 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.empty-rectangle .image4 {
+    width: 2.5vw; /* Set width of the image */
+    height: 2.5vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -19vw;
+    left: 0;
+    border-radius: 50%;
+}
+
+.empty-rectangle .text3 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -25.3vw; /* Adjust the vertical position */
+    left: 1.3vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .rectangle1 {
+    width: 21vw; /* Set the width */
+    height: 2.5vw; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    position: relative;
+    top: -23vw;
+    left: 2vw;
+    border-radius: 30px;
+}
+
+.empty-rectangle .text4 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -26.7vw; /* Adjust the vertical position */
+    left: -0.2vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text5 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.7vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -26.8vw; /* Adjust the vertical position */
+    left: -1.2vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text6 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -28.5vw; /* Adjust the vertical position */
+    left: -1.4vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text7 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -30vw; /* Adjust the vertical position */
+    left: -6.7vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text8 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.6vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -30vw; /* Adjust the vertical position */
+    left: 1vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text9 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -31.6vw; /* Adjust the vertical position */
+    left: -1.4vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text10 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -33vw; /* Adjust the vertical position */
+    left: -6.7vw; /* Adjust the horizontal position */
+}
+
+
+.empty-rectangle .rectangle2 {
+    width: 21vw; /* Set the width */
+    height: 2.5vw; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    position: relative;
+    top: -30.5vw;
+    left: 2vw;
+    border-radius: 30px;
+}
+
+.empty-rectangle .image5 {
+    width: 6vw; /* Set width of the image */
+    height: 8vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -38.1vw;
+    left: 1.6vw;
+}
+
+.empty-rectangle .text11 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -47.5vw; /* Adjust the vertical position */
+    left: 1.1vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text12 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -47vw; /* Adjust the vertical position */
+    left: -7vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text13 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -47vw; /* Adjust the vertical position */
+    left: -8.1vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text14 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -47vw; /* Adjust the vertical position */
+    left: -8.6vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text15 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -47vw; /* Adjust the vertical position */
+    left: -5.5vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text16 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -59.8vw; /* Adjust the vertical position */
+    left: 2vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text17 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -59.8vw; /* Adjust the vertical position */
+    left: 4.7vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text18 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -59.8vw; /* Adjust the vertical position */
+    left: 4.4vw; /* Adjust the horizontal position */
+}
+.empty-rectangle .rectangle3 {
+    width: 21vw; /* Set the width */
+    height: 2.5vw; /* Set the height */
+    background-color: #b1d0d8; /* Set the background color */
+    position: relative;
+    top: -54.5vw;
+    left: 2vw;
+    border-radius: 30px;
+}
+
+.empty-rectangle .text19 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -58.2vw; /* Adjust the vertical position */
+    left: -0.2vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text20 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -57vw; /* Adjust the vertical position */
+    left: -7.5vw; /* Adjust the horizontal position */
+}
+
+.empty-rectangle .text21 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -57vw; /* Adjust the vertical position */
+    left: -4.7vw; /* Adjust the horizontal position */
+}
+
+
+.text22 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: 6vw; /* Adjust the vertical position */
+    left: 2vw; /* Adjust the horizontal position */
+}
+
+.plain-rectangle2 {
+    width: 46vw; /* Set the width */
+    height: 100vw; /* Set the height */
+    position: relative;
+    top: -140.5vw;
+    left: 39vw;
+}
+.text23 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 3vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: 0; /* Adjust the vertical position */
+    left: -11.5vw; /* Adjust the horizontal position */
+}
+
+.image6 {
+    width: 6vw; /* Set width of the image */
+    height: 8vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -7vw;
+    left: -6vw;
+}
+
+.text24 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -20vw; /* Adjust the vertical position */
+    left: -16vw; /* Adjust the horizontal position */
+}
+
+.text25 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -21vw; /* Adjust the vertical position */
+    left: 0; /* Adjust the horizontal position */
+}
+
+.image7 {
+    width: 6vw; /* Set width of the image */
+    height: 8vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -25vw;
+    left: -6vw;
+}
+
+.text26 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -38vw; /* Adjust the vertical position */
+    left: -10vw; /* Adjust the horizontal position */
+}
+
+.text27 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -80.4vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text28 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -80.4vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text29 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -73.3vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text30 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -73.3vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text31 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -66.2vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text32 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -66.2vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text33 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -59.1vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text34 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -59.1vw; /* Adjust the vertical position */
+    left: -20vw; /* Adjust the horizontal position */
+}
+
+.text35 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -112vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text36 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -101vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+p.text36 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text36 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.text37 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -90vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text38 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -79vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text39 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -126vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text40 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -115vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text41 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -104vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text42 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    margin-top: 5%; /* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -93vw; /* Adjust the vertical position */
+    left: 7vw; /* Adjust the horizontal position */
+}
+
+.text43 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4vw;
+    font-weight: normal;
+    list-style-type: disc; /* Use disc bullet points */
+    position: absolute; /* Make the lists position absolute */
+    left: 0; /* Position the lists at the left edge of the container */
+    width: calc(100% - 40px); /* Set the width to 100% minus twice the padding of the container */
+    padding-left: 20px; /* Adjust padding to align text with bullets */
+    margin: 0;
+    top: 32.3vw;
+    left: 7vw;  /* Adjust the horizontal position */
+}
+
+.text44 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4vw;
+    font-weight: normal;
+    list-style-type: disc; /* Use disc bullet points */
+    position: absolute; /* Make the lists position absolute */
+    left: 0; /* Position the lists at the left edge of the container */
+    width: calc(100% - 40px); /* Set the width to 100% minus twice the padding of the container */
+    padding-left: 20px; /* Adjust padding to align text with bullets */
+    margin: 0;
+    top: 47vw;
+    left: 7vw; 
+}
+
+.text45 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4vw;
+    font-weight: normal;
+    list-style-type: disc; /* Use disc bullet points */
+    position: absolute; /* Make the lists position absolute */
+    left: 0; /* Position the lists at the left edge of the container */
+    width: calc(100% - 40px); /* Set the width to 100% minus twice the padding of the container */
+    padding-left: 20px; /* Adjust padding to align text with bullets */
+    margin: 0;
+    top: 62vw;
+    left: 7vw; 
+}
+
+.text46 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4vw;
+    font-weight: normal;
+    list-style-type: disc; /* Use disc bullet points */
+    position: absolute; /* Make the lists position absolute */
+    left: 0; /* Position the lists at the left edge of the container */
+    width: calc(100% - 40px); /* Set the width to 100% minus twice the padding of the container */
+    padding-left: 20px; /* Adjust padding to align text with bullets */
+    margin: 0;
+    top: 77vw;
+    left: 7vw; 
+}
+
+
+.line {
+    height: 10vw; /* Set height to cover the entire height */
+    position: relative;
+    border-left: 2px solid #b1d0d8; /* Set the left border */
+    top: -37vw;
+    left: 6vw;
+}
+
+.line2 {
+    height: 10vw; /* Set height to cover the entire height */
+    position: relative;
+    border-left: 2px solid #b1d0d8; /* Set the left border */
+    top: -32vw;
+    left: 6vw;
+}
+
+.line3 {
+    height: 10vw; /* Set height to cover the entire height */
+    position: relative;
+    border-left: 2px solid #b1d0d8; /* Set the left border */
+    top: -27vw;
+    left: 6vw;
+}
+
+.line4 {
+    height: 10vw; /* Set height to cover the entire height */
+    position: relative;
+    border-left: 2px solid #b1d0d8; /* Set the left border */
+    top: -22vw;
+    left: 6vw;
+}
+
+.line5 {
+    width: 1vw;
+    position: relative;
+    border-bottom: 2px solid #000; /* Set the left border */
+    top: -74.8vw;
+    left: 2.5vw;
+}
+
+.line6 {
+    width: 1vw;
+    position: relative;
+    border-bottom: 2px solid #000; /* Set the left border */
+    top: -60vw;
+    left: 2.5vw;
+}
+
+.line7 {
+    width: 1vw;
+    position: relative;
+    border-bottom: 2px solid #000; /* Set the left border */
+    top: -45.5vw;
+    left: 2.5vw;
+}
+
+.line8 {
+    width: 1vw;
+    position: relative;
+    border-bottom: 2px solid #000; /* Set the left border */
+    top: -30.5vw;
+    left: 2.5vw;
+}
+
+.plain-rectangle3 {
+    width: 25.5vw; /* Set the width */
+    height: 15vw; /* Set the height */
+    position: relative;
+    top: -155vw;
+    left: 37vw;
+    border-radius: 10px;
+}
+
+.plain-rectangle3 .image8 {
+    width: 10vw; /* Set width of the image */
+    height: 10vw; /* Maintain aspect ratio */
+    margin: 10%; /* Center the image horizontally */
+    position: relative;
+    top: -4.6vw;
+    left: -3.4vw;
+}
+
+.plain-rectangle3 .text47 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 2vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center-align the text *//* Add some space between image and text */
+    position: relative; /* Position the text absolutely */
+    top: -16vw; /* Adjust the vertical position */
+    left: 0; /* Adjust the horizontal position */
+}
+
+.plain-rectangle3 .text48 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.6vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -16vw; /* Adjust the vertical position */
+    left: 3vw; /* Adjust the horizontal position */
+}
+
+.plain-rectangle3 .text49 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -17.5vw; /* Adjust the vertical position */
+    left: 3vw; /* Adjust the horizontal position */
+}
+
+.plain-rectangle3 .text50 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -18.5vw; /* Adjust the vertical position */
+    left: 3vw; /* Adjust the horizontal position */
+}
+
+.plain-rectangle3 .text51 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -19.5vw; /* Adjust the vertical position */
+    left: 3vw; /* Adjust the horizontal position */
+}
+
+.plain-rectangle3 .text52 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -24.4vw; /* Adjust the vertical position */
+    left: 8.1vw; /* Adjust the horizontal position */
+}
+
+p.text52 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text52 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.plain-rectangle3 .text53 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -25.5vw; /* Adjust the vertical position */
+    left: 8.1vw; /* Adjust the horizontal position */
+}
+
+p.text53 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text53 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.plain-rectangle4 {
+    width: 25.5vw; /* Set the width */
+    height: 15vw; /* Set the height */
+    position: relative;
+    top: -170vw;
+    left: 62.5vw;
+    border-radius: 10px;
+}
+
+.plain-rectangle4 .text54 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.6vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: 4.28vw; /* Adjust the vertical position */
+    left: 0; /* Adjust the horizontal position */
+}
+
+.plain-rectangle4 .text55 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.5vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: 2.8vw; /* Adjust the vertical position */
+    left: 0; /* Adjust the horizontal position */
+}
+
+.plain-rectangle4 .text56 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: 1.8vw; /* Adjust the vertical position */
+    left: 0 /* Adjust the horizontal position */
+}
+
+.plain-rectangle4 .text57 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: 0.8vw; /* Adjust the vertical position */
+    left: 0 /* Adjust the horizontal position */
+}
+
+.plain-rectangle4 .text58 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -4.1vw; /* Adjust the vertical position */
+    left: 5.1vw; /* Adjust the horizontal position */
+}
+
+p.text58 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text58 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.plain-rectangle4 .text59 {
+    font-family: 'poppins', sans-serif; /* Change the font family */
+    font-size: 1.4vw; /* Set the font size */
+    font-weight: normal; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Position the text absolutely */
+    top: -5.3vw; /* Adjust the vertical position */
+    left: 5.1vw; /* Adjust the horizontal position */
+}
+
+p.text59 a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.text59 a:hover {
+    color: white !important; /* Change color on hover */
+}
+
+.pdf-link {
+    font-weight: bold; /* Make the text bold */
+    position: relative;
+    font-size: 2vw; /* Adjust font size */
+    top: -29vw;
+    left: 26vw;
+}
+
+p.pdf-link a {
+    color: black !important; /* Set the default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p.pdf-link a:hover {
+    color: white !important; /* Change color on hover */
+}

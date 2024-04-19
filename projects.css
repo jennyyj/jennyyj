@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    background-color: #707fa4;
+    font-family: 'Montserrat', sans-serif; /* Apply the imported font to the body */
+}
+
+/* Add styles for header */
+.header {
+    color: white;
+    padding: 10px;
+}
+
+/* Add styles for toggle button */
+.header-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Add styles for toggle lines */
+.toggle-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Add styles for sidebar */
+.sidebar {
+    position: relative;
+    top: 8%;
+    left: -100%; /* Hide the sidebar off-screen by default */
+    width: 12vw;
+    height: 30vw; /* Adjust height to fill the entire viewport */
+    background-color: #707fa4;
+    color: white;
+    transition: left 0.5s ease; /* Transition the left position */
+    z-index: 1000;
+}
+
+.sidebar-content {
+    padding-top: 1vw;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease; /* Add transition for background color */
+    border-radius: 50px;
+    position: relative;
+}
+
+.sidebar a:hover {
+    background-color: #b1d0d8;
+}
+
+.sidebar a::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Set it to absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Inherit border radius from the parent */
+    z-index: -1; /* Set a lower z-index to position behind the text */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 12vw; /* Adjust the width for smaller screens */
+    }
+
+    .content-container {
+        margin-left: 200px; /* Adjust the margin for smaller screens */
+    }
+    body {
+        font-size: 2vw; /* Decrease font size for smaller screens */
+    }
+}
+
+.container {
+    width: 10%; /* Adjust the width of the container */
+    margin: 10vw; /* Center the container and adjust margin */
+    position: relative;
+    left: 0;
+    top: -35vw;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    margin: 10px auto 0;
+}
+
+.cell {
+    width: 5vw;
+    height: 5vw;
+    border: 0.5vw solid white;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #b1d0d8;
+}
+
+.text {
+    text-align: left;
+    margin-top: 0;
+    color: white;
+    font-size: 2vw;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -30vw;
+    font-size: 2vw;
+}
