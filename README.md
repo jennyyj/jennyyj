@@ -1,5 +1,5 @@
 ### Hi there 👋
-### This Repository is just a website I am using to practice my technical skills. It's a resume for myself. 
+### This Repository is just a website I am using to practice my technical skills as I keep learning. It's an all about me page and I update it whenever I find the time to clean up the code and just experiment different designs.  
 
 <!--
 **jennyyj/jennyyj** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
